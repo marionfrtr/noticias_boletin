@@ -47,7 +47,7 @@ def scrap_table():
         "documento": "",
         "codigoValidacion": "",
         "subCategoria": "",
-        "tipoProcedimiento": "3",
+        "tipoProcedimiento": "",
         "rut": "",
         "nombre": "",
         "fch_inicio": fch_inicio,
