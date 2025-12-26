@@ -47,7 +47,7 @@ def scrap_table():
         "documento": "",
         "codigoValidacion": "",
         "subCategoria": "",
-        "tipoProcedimiento": "",
+        "tipoProcedimiento": "0",
         "rut": "",
         "nombre": "",
         "fch_inicio": fch_inicio,
@@ -75,6 +75,7 @@ def scrap_table():
 
 def send_email(df):
     csv_data = df.to_csv(index=False)
+    print("Nombre de lignes :", len(df))
     today = datetime.utcnow().strftime("%Y-%m-%d")
 
     msg = EmailMessage()
